@@ -10,8 +10,8 @@ ARG FLATBUFFERS_IMAGE_TAG="stretch-slim"
 
 FROM ${FLATBUFFERS_IMAGE_BASE}:${FLATBUFFERS_IMAGE_TAG} as flatbuffer_build
 
-ARG FLATBUFFERS_ARCHIVE_BASE_URL="https://github.com/google/flatbuffers/archive"
-ARG FLATBUFFERS_ARCHIVE_TAG="master"
+ARG FLATBUFFERS_ARCHIVE_BASE_URL="https://github.com/rbs-forks/flatbuffers/archive"
+ARG FLATBUFFERS_ARCHIVE_TAG="python_bytevector_speedup"
 ARG FLATBUFFERS_BUILD_TYPE="Release"
 
 # Set to exactly "true" to use clang
